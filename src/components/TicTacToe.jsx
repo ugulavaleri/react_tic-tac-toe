@@ -11,11 +11,20 @@ const Cube = ({ value, onClickEvent }) => {
 
 const Header = () => {
     const [block, setBlock] = useState(Array(9).fill(null));
+    const [xTurn, setXturn] = useState(true);
 
     const changeValue = (e) => {
         const clone = [...block];
-        clone[e] = "X";
+        if (clone[e]) {
+            return;
+        }
+        if (xTurn) {
+            clone[e] = "X";
+        } else {
+            clone[e] = "O";
+        }
         setBlock(clone);
+        setXturn(!xTurn);
     };
 
     return (
