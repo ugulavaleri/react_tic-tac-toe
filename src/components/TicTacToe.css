@@ -1,0 +1,21 @@
+.headerBox {
+    background-color: lightcoral;
+}
+ul li {
+    list-style: none;
+}
+.cube {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: transparent;
+
+    font-size: 40px;
+    font-weight: 700;
+    border-collapse: collapse;
+
+    text-align: center;
+    line-height: 98px;
+
+    cursor: pointer;
+}
